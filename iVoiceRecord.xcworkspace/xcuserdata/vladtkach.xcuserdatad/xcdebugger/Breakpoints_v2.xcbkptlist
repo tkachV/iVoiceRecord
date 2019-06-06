@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iVoiceRecord/Modules/VoiceRecord/ViewModels/VoiceRecordViewModel.swift"
+            timestampString = "581496828.972967"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "VoiceRecordViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iVoiceRecord/Modules/VoiceRecord/Views/TVC/VoiceTrackTVC.swift"
+            timestampString = "581496828.973125"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "prapareViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iVoiceRecord/Modules/VoiceRecord/Controllers/MainVoiceRecordController.swift"
+            timestampString = "581496828.973191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "bindTableView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iVoiceRecord/Modules/VoiceRecord/Controllers/MainVoiceRecordController.swift"
+            timestampString = "581496828.973258"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "prepaerBottomView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in iVoiceRecord.MainVoiceRecordController.(prepaerBottomView in _3180CA6D70EF4B395AC2A7C1CA27F9FF)() -&gt; ()"
+                  moduleName = "iVoiceRecord"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladtkach/LocalDocuments/projects/my_projects/iVoiceRecord/iVoiceRecord/Modules/VoiceRecord/Controllers/MainVoiceRecordController.swift"
+                  timestampString = "581475942.233364"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in closure #1 () -&gt; () in iVoiceRecord.MainVoiceRecordController.(prepaerBottomView in _3180CA6D70EF4B395AC2A7C1CA27F9FF)() -&gt; ()"
+                  moduleName = "iVoiceRecord"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladtkach/LocalDocuments/projects/my_projects/iVoiceRecord/iVoiceRecord/Modules/VoiceRecord/Controllers/MainVoiceRecordController.swift"
+                  timestampString = "581475942.235839"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iVoiceRecord/Modules/VoiceRecord/Controllers/MainVoiceRecordController.swift"
+            timestampString = "581496828.9733059"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "prepaerBottomView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
