@@ -1,0 +1,39 @@
+PODS:
+  - Differentiator (3.1.0)
+  - PinLayout (1.8.7)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - PinLayout (~> 1)
+  - RxCocoa (~> 4.0.0)
+  - RxDataSources (~> 3.0.1)
+  - RxSwift (~> 4.0.0)
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Differentiator
+    - PinLayout
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  PinLayout: a0722a5c8f0e0168a9c091ffe4930dabf0c8582c
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: 877c86e67b6ad52618bf929ce8abc9fd285142f4
+
+COCOAPODS: 1.5.3
