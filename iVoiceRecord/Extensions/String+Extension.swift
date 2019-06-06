@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+
+extension String {
+    func stringByAppendingPathComponent(path: String) -> String {
+        let nsString = self as NSString
+        return nsString.appendingPathComponent(path)
+    }
+}

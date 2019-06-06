@@ -1,5 +1,5 @@
 //
-//  VoiceRecognitionNavigationController.swift
+//  VoiceRecordNavigationController.swift
 //  iVoiceRecord
 //
 //  Created by Vlad Tkach on 6/3/19.
@@ -12,39 +12,40 @@ import UIKit
 
 enum VoiceRecordControllersType: String {
     case mainVoiceRecordController  = "MainVoiceRecordController"
+    case trackDetailsController = "DetailsVoiceTrackController"
 }
 
 
 protocol VoiceRecordNavigationOutput: class {
     
-
+    func compleVoiceRecordModuleWorkflow()
 }
 
 /// This is root navigation controller of auth module
-class VoiceRecordController: UINavigationController {
+class VoiceRecordNavigationController: UINavigationController {
     typealias Controller = UIViewController
     
-    weak var output: VoiceRecognitionNavigationOutput?
+    weak var output: VoiceRecordNavigationOutput?
     
     //MARK: ViewModel
     var viewModel: VoiceRecordViewModel?
-    var currentControllerType: AuthControllersType!
+    var currentControllerType: VoiceRecordControllersType!
     
     
-    //MARK: - Core View Controllers
+    //MARK: Core View Controllers
 
     
-    //MARK: - Initialization
+    //MARK: Initialization
     init(viewModel: VoiceRecordViewModel) {
-        let controller = UIStoryboard(name: Storyboards.Auth.rawValue,
+        let controller = UIStoryboard(name: Storyboards.VoiceRecord.rawValue,
                                       bundle: nil)
-            .instantiateViewController(withIdentifier: AuthControllersType.authSplash.rawValue)
+            .instantiateViewController(withIdentifier: VoiceRecordControllersType.mainVoiceRecordController.rawValue)
         
         super.init(rootViewController: controller)
         
         self.viewModel = viewModel
-        (controller as? AuthSplashViewController)?.output = self
-        (controller as? AuthSplashViewController)?.viewModel = viewModel
+        (controller as? MainVoiceRecordController)?.output = self
+        (controller as? MainVoiceRecordController)?.setViewModel(viewModel)
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -55,14 +56,29 @@ class VoiceRecordController: UINavigationController {
         super.init(coder: aDecoder)
     }
     
-    //MARK: - Implementations
+    //MARK: Implementations
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //    isNavigationBarHidden = true
-        navigationBar.isTranslucent = true
-        navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationBar.shadowImage = UIImage()
-        
     }
+}
+
+//MARK: - MainVoiceRecordOutput
+extension VoiceRecordNavigationController: MainVoiceRecordOutput {
+    func showDetails(forTrack viewModel: VoiceTrackViewModel) {
+       
+        let detailsVC = UIStoryboard(name: Storyboards.VoiceRecord.rawValue,
+                                      bundle: nil)
+            .instantiateViewController(withIdentifier: VoiceRecordControllersType.trackDetailsController.rawValue)
+        
+        
+        (detailsVC as? DetailsVoiceTrackController)?.output = self
+        (detailsVC as? DetailsVoiceTrackController)?.setViewModel(viewModel)
+        
+        self.pushViewController(detailsVC, animated: true)
+    }
+}
+
+extension VoiceRecordNavigationController: DetailsVoiceTrackOutput {
+    
 }

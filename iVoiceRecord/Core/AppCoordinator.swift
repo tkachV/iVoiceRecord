@@ -7,3 +7,27 @@
 //
 
 import Foundation
+import UIKit
+
+
+class AppCoordinator: NSObject {
+    
+    var router      : AppRouter!
+    var viewModel   : AppViewModel!
+    
+    //Initializing
+    init(window: UIWindow) {
+        super.init()
+        
+        /* Some configuration.... */
+        viewModel = AppViewModel()
+        
+        router = AppRouter(window: window, viewModel: viewModel)
+    }
+    
+    /* MAIN workflow function. */
+    func startApplicationWorkflow() {
+        self.router.prepareVoiceRecordWorkflow(viewModel: viewModel.generateVoiceRecordViewModel())
+    }
+    
+}

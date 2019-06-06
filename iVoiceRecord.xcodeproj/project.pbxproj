@@ -7,21 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1352B4DF73EA2D49F3E48E /* Pods_iVoiceRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D4813CF57E84D5F31F1F40 /* Pods_iVoiceRecord.framework */; };
+		C7F73E3622A83B9A00297014 /* VoiceTrackTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F73E3522A83B9A00297014 /* VoiceTrackTVC.swift */; };
+		C7F73E3822A8440000297014 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F73E3722A8440000297014 /* UIView+Extension.swift */; };
+		C7F73E3A22A8463E00297014 /* VoiceTrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F73E3922A8463E00297014 /* VoiceTrackViewModel.swift */; };
+		C7F73E3D22A84C5400297014 /* RxDataSource+Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F73E3C22A84C5400297014 /* RxDataSource+Sections.swift */; };
+		C7F73E4122A85B6400297014 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F73E4022A85B6400297014 /* Date+Extension.swift */; };
+		C7F73E4322A86CEE00297014 /* VoiceTracksSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F73E4222A86CEE00297014 /* VoiceTracksSectionHeader.swift */; };
+		C7F73E4522A8732400297014 /* SimpleVoiceTracksSectionHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F73E4422A8732400297014 /* SimpleVoiceTracksSectionHeaderViewModel.swift */; };
+		C7F73E4722A882A300297014 /* MainVoiceRecordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F73E4622A882A300297014 /* MainVoiceRecordStatusView.swift */; };
+		C7F73E4922A8E6CC00297014 /* DetailsVoiceTrackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F73E4822A8E6CC00297014 /* DetailsVoiceTrackController.swift */; };
 		C7FA0E1D22A5A5A600F74189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E1C22A5A5A600F74189 /* AppDelegate.swift */; };
-		C7FA0E1F22A5A5A600F74189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E1E22A5A5A600F74189 /* ViewController.swift */; };
 		C7FA0E2222A5A5A600F74189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FA0E2022A5A5A600F74189 /* Main.storyboard */; };
 		C7FA0E2422A5A5A700F74189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FA0E2322A5A5A700F74189 /* Assets.xcassets */; };
 		C7FA0E2722A5A5A700F74189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FA0E2522A5A5A700F74189 /* LaunchScreen.storyboard */; };
+		C7FA0E3122A5A72B00F74189 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E3022A5A72B00F74189 /* AppCoordinator.swift */; };
+		C7FA0E3322A5A73A00F74189 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E3222A5A73A00F74189 /* AppViewModel.swift */; };
+		C7FA0E3522A5A75F00F74189 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E3422A5A75F00F74189 /* AppRouter.swift */; };
+		C7FA0E3722A5A78300F74189 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E3622A5A78300F74189 /* AppNavigationController.swift */; };
+		C7FA0E3922A5A79900F74189 /* AppSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E3822A5A79900F74189 /* AppSplashViewController.swift */; };
+		C7FA0E3C22A5AAAA00F74189 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E3B22A5AAAA00F74189 /* Storyboards.swift */; };
+		C7FA0E3F22A5AB2600F74189 /* VoiceRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E3E22A5AB2600F74189 /* VoiceRecordViewModel.swift */; };
+		C7FA0E4122A5AD7800F74189 /* VoiceRecordNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E4022A5AD7800F74189 /* VoiceRecordNavigationController.swift */; };
+		C7FA0E4822A5AF0700F74189 /* MainVoiceRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E4722A5AF0700F74189 /* MainVoiceRecordController.swift */; };
+		C7FA0E4A22A5B02200F74189 /* VoiceRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FA0E4922A5B02200F74189 /* VoiceRecord.storyboard */; };
+		C7FA0E4C22A5B9C000F74189 /* VoiceRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E4B22A5B9C000F74189 /* VoiceRecordView.swift */; };
+		C7FA0E5D22A708AA00F74189 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E5C22A708AA00F74189 /* AudioService.swift */; };
+		C7FA0E5F22A708E400F74189 /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E5E22A708E400F74189 /* LocalStorageService.swift */; };
+		C7FA0E6422A70A3200F74189 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E6322A70A3200F74189 /* UIViewController+Extension.swift */; };
+		C7FA0E6722A70A9C00F74189 /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E6622A70A9C00F74189 /* PermissionsManager.swift */; };
+		C7FA0E6922A7129000F74189 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FA0E6822A7129000F74189 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47D4813CF57E84D5F31F1F40 /* Pods_iVoiceRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iVoiceRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADA753737CBE193EF73993E /* Pods-iVoiceRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iVoiceRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-iVoiceRecord/Pods-iVoiceRecord.release.xcconfig"; sourceTree = "<group>"; };
+		94B47AD46578168E4F3DA15D /* Pods-iVoiceRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iVoiceRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iVoiceRecord/Pods-iVoiceRecord.debug.xcconfig"; sourceTree = "<group>"; };
+		C7F73E3522A83B9A00297014 /* VoiceTrackTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTrackTVC.swift; sourceTree = "<group>"; };
+		C7F73E3722A8440000297014 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C7F73E3922A8463E00297014 /* VoiceTrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTrackViewModel.swift; sourceTree = "<group>"; };
+		C7F73E3C22A84C5400297014 /* RxDataSource+Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxDataSource+Sections.swift"; sourceTree = "<group>"; };
+		C7F73E4022A85B6400297014 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		C7F73E4222A86CEE00297014 /* VoiceTracksSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTracksSectionHeader.swift; sourceTree = "<group>"; };
+		C7F73E4422A8732400297014 /* SimpleVoiceTracksSectionHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVoiceTracksSectionHeaderViewModel.swift; sourceTree = "<group>"; };
+		C7F73E4622A882A300297014 /* MainVoiceRecordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVoiceRecordStatusView.swift; sourceTree = "<group>"; };
+		C7F73E4822A8E6CC00297014 /* DetailsVoiceTrackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVoiceTrackController.swift; sourceTree = "<group>"; };
 		C7FA0E1922A5A5A600F74189 /* iVoiceRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iVoiceRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FA0E1C22A5A5A600F74189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7FA0E1E22A5A5A600F74189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7FA0E2122A5A5A600F74189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7FA0E2322A5A5A700F74189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7FA0E2622A5A5A700F74189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7FA0E2822A5A5A700F74189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7FA0E3022A5A72B00F74189 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C7FA0E3222A5A73A00F74189 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		C7FA0E3422A5A75F00F74189 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		C7FA0E3622A5A78300F74189 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		C7FA0E3822A5A79900F74189 /* AppSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSplashViewController.swift; sourceTree = "<group>"; };
+		C7FA0E3B22A5AAAA00F74189 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		C7FA0E3E22A5AB2600F74189 /* VoiceRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecordViewModel.swift; sourceTree = "<group>"; };
+		C7FA0E4022A5AD7800F74189 /* VoiceRecordNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecordNavigationController.swift; sourceTree = "<group>"; };
+		C7FA0E4722A5AF0700F74189 /* MainVoiceRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVoiceRecordController.swift; sourceTree = "<group>"; };
+		C7FA0E4922A5B02200F74189 /* VoiceRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VoiceRecord.storyboard; sourceTree = "<group>"; };
+		C7FA0E4B22A5B9C000F74189 /* VoiceRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecordView.swift; sourceTree = "<group>"; };
+		C7FA0E5C22A708AA00F74189 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		C7FA0E5E22A708E400F74189 /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
+		C7FA0E6322A70A3200F74189 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C7FA0E6622A70A9C00F74189 /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		C7FA0E6822A7129000F74189 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +81,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1352B4DF73EA2D49F3E48E /* Pods_iVoiceRecord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		815AE61FD34E810FC5F555FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47D4813CF57E84D5F31F1F40 /* Pods_iVoiceRecord.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C659880706E09EDB74A15B2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94B47AD46578168E4F3DA15D /* Pods-iVoiceRecord.debug.xcconfig */,
+				5ADA753737CBE193EF73993E /* Pods-iVoiceRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7F73E3422A83B4100297014 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				C7F73E3522A83B9A00297014 /* VoiceTrackTVC.swift */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		C7F73E3B22A84C4200297014 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C7F73E3C22A84C5400297014 /* RxDataSource+Sections.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		C7FA0E1022A5A5A600F74189 = {
 			isa = PBXGroup;
 			children = (
 				C7FA0E1B22A5A5A600F74189 /* iVoiceRecord */,
 				C7FA0E1A22A5A5A600F74189 /* Products */,
+				C659880706E09EDB74A15B2D /* Pods */,
+				815AE61FD34E810FC5F555FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +142,126 @@
 		C7FA0E1B22A5A5A600F74189 /* iVoiceRecord */ = {
 			isa = PBXGroup;
 			children = (
-				C7FA0E1C22A5A5A600F74189 /* AppDelegate.swift */,
-				C7FA0E1E22A5A5A600F74189 /* ViewController.swift */,
-				C7FA0E2022A5A5A600F74189 /* Main.storyboard */,
+				C7FA0E2E22A5A6FE00F74189 /* Core */,
+				C7FA0E2F22A5A70E00F74189 /* Modules */,
+				C7FA0E6222A70A1800F74189 /* Extensions */,
+				C7FA0E6522A70A8300F74189 /* GlobalManagers */,
+				C7FA0E3A22A5A7C700F74189 /* Resources */,
+				C7F73E3B22A84C4200297014 /* Common */,
 				C7FA0E2322A5A5A700F74189 /* Assets.xcassets */,
 				C7FA0E2522A5A5A700F74189 /* LaunchScreen.storyboard */,
 				C7FA0E2822A5A5A700F74189 /* Info.plist */,
 			);
 			path = iVoiceRecord;
+			sourceTree = "<group>";
+		};
+		C7FA0E2E22A5A6FE00F74189 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C7FA0E2022A5A5A600F74189 /* Main.storyboard */,
+				C7FA0E3B22A5AAAA00F74189 /* Storyboards.swift */,
+				C7FA0E1C22A5A5A600F74189 /* AppDelegate.swift */,
+				C7FA0E3022A5A72B00F74189 /* AppCoordinator.swift */,
+				C7FA0E3222A5A73A00F74189 /* AppViewModel.swift */,
+				C7FA0E3422A5A75F00F74189 /* AppRouter.swift */,
+				C7FA0E3622A5A78300F74189 /* AppNavigationController.swift */,
+				C7FA0E3822A5A79900F74189 /* AppSplashViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C7FA0E2F22A5A70E00F74189 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C7FA0E3D22A5AAF100F74189 /* VoiceRecord */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C7FA0E3A22A5A7C700F74189 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C7FA0E3D22A5AAF100F74189 /* VoiceRecord */ = {
+			isa = PBXGroup;
+			children = (
+				C7FA0E4922A5B02200F74189 /* VoiceRecord.storyboard */,
+				C7FA0E4022A5AD7800F74189 /* VoiceRecordNavigationController.swift */,
+				C7FA0E4522A5AE3600F74189 /* Models */,
+				C7FA0E4422A5AE3000F74189 /* Views */,
+				C7FA0E4222A5AE0C00F74189 /* ViewModels */,
+				C7FA0E4322A5AE1C00F74189 /* Controllers */,
+				C7FA0E4622A5AE4C00F74189 /* Services */,
+			);
+			path = VoiceRecord;
+			sourceTree = "<group>";
+		};
+		C7FA0E4222A5AE0C00F74189 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C7FA0E3E22A5AB2600F74189 /* VoiceRecordViewModel.swift */,
+				C7F73E3922A8463E00297014 /* VoiceTrackViewModel.swift */,
+				C7F73E4422A8732400297014 /* SimpleVoiceTracksSectionHeaderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C7FA0E4322A5AE1C00F74189 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7FA0E4722A5AF0700F74189 /* MainVoiceRecordController.swift */,
+				C7F73E4822A8E6CC00297014 /* DetailsVoiceTrackController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C7FA0E4422A5AE3000F74189 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7F73E4622A882A300297014 /* MainVoiceRecordStatusView.swift */,
+				C7FA0E4B22A5B9C000F74189 /* VoiceRecordView.swift */,
+				C7F73E4222A86CEE00297014 /* VoiceTracksSectionHeader.swift */,
+				C7F73E3422A83B4100297014 /* TVC */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7FA0E4522A5AE3600F74189 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7FA0E4622A5AE4C00F74189 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C7FA0E5C22A708AA00F74189 /* AudioService.swift */,
+				C7FA0E5E22A708E400F74189 /* LocalStorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C7FA0E6222A70A1800F74189 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7FA0E6322A70A3200F74189 /* UIViewController+Extension.swift */,
+				C7FA0E6822A7129000F74189 /* String+Extension.swift */,
+				C7F73E3722A8440000297014 /* UIView+Extension.swift */,
+				C7F73E4022A85B6400297014 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C7FA0E6522A70A8300F74189 /* GlobalManagers */ = {
+			isa = PBXGroup;
+			children = (
+				C7FA0E6622A70A9C00F74189 /* PermissionsManager.swift */,
+			);
+			path = GlobalManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7FA0E2B22A5A5A700F74189 /* Build configuration list for PBXNativeTarget "iVoiceRecord" */;
 			buildPhases = (
+				4C049366D53E25DB6E99CD4D /* [CP] Check Pods Manifest.lock */,
 				C7FA0E1522A5A5A600F74189 /* Sources */,
 				C7FA0E1622A5A5A600F74189 /* Frameworks */,
 				C7FA0E1722A5A5A600F74189 /* Resources */,
+				4F809FEC2B26846B4404AA84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,19 +326,100 @@
 			files = (
 				C7FA0E2722A5A5A700F74189 /* LaunchScreen.storyboard in Resources */,
 				C7FA0E2422A5A5A700F74189 /* Assets.xcassets in Resources */,
+				C7FA0E4A22A5B02200F74189 /* VoiceRecord.storyboard in Resources */,
 				C7FA0E2222A5A5A600F74189 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C049366D53E25DB6E99CD4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iVoiceRecord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F809FEC2B26846B4404AA84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iVoiceRecord/Pods-iVoiceRecord-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iVoiceRecord/Pods-iVoiceRecord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7FA0E1522A5A5A600F74189 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FA0E1F22A5A5A600F74189 /* ViewController.swift in Sources */,
+				C7F73E4522A8732400297014 /* SimpleVoiceTracksSectionHeaderViewModel.swift in Sources */,
+				C7FA0E6922A7129000F74189 /* String+Extension.swift in Sources */,
+				C7FA0E3122A5A72B00F74189 /* AppCoordinator.swift in Sources */,
+				C7FA0E4C22A5B9C000F74189 /* VoiceRecordView.swift in Sources */,
+				C7FA0E5D22A708AA00F74189 /* AudioService.swift in Sources */,
+				C7FA0E3922A5A79900F74189 /* AppSplashViewController.swift in Sources */,
+				C7FA0E3322A5A73A00F74189 /* AppViewModel.swift in Sources */,
+				C7F73E3A22A8463E00297014 /* VoiceTrackViewModel.swift in Sources */,
+				C7FA0E6722A70A9C00F74189 /* PermissionsManager.swift in Sources */,
+				C7FA0E3722A5A78300F74189 /* AppNavigationController.swift in Sources */,
+				C7FA0E3522A5A75F00F74189 /* AppRouter.swift in Sources */,
+				C7F73E4722A882A300297014 /* MainVoiceRecordStatusView.swift in Sources */,
+				C7F73E3D22A84C5400297014 /* RxDataSource+Sections.swift in Sources */,
+				C7F73E4122A85B6400297014 /* Date+Extension.swift in Sources */,
 				C7FA0E1D22A5A5A600F74189 /* AppDelegate.swift in Sources */,
+				C7FA0E3F22A5AB2600F74189 /* VoiceRecordViewModel.swift in Sources */,
+				C7F73E3622A83B9A00297014 /* VoiceTrackTVC.swift in Sources */,
+				C7F73E3822A8440000297014 /* UIView+Extension.swift in Sources */,
+				C7FA0E3C22A5AAAA00F74189 /* Storyboards.swift in Sources */,
+				C7F73E4922A8E6CC00297014 /* DetailsVoiceTrackController.swift in Sources */,
+				C7FA0E5F22A708E400F74189 /* LocalStorageService.swift in Sources */,
+				C7FA0E4122A5AD7800F74189 /* VoiceRecordNavigationController.swift in Sources */,
+				C7F73E4322A86CEE00297014 /* VoiceTracksSectionHeader.swift in Sources */,
+				C7FA0E6422A70A3200F74189 /* UIViewController+Extension.swift in Sources */,
+				C7FA0E4822A5AF0700F74189 /* MainVoiceRecordController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,36 +563,40 @@
 		};
 		C7FA0E2C22A5A5A700F74189 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B47AD46578168E4F3DA15D /* Pods-iVoiceRecord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X44Y44AQN8;
 				INFOPLIST_FILE = iVoiceRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tkachvladyslavyu.ivoicerecord.iVoiceRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C7FA0E2D22A5A5A700F74189 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ADA753737CBE193EF73993E /* Pods-iVoiceRecord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X44Y44AQN8;
 				INFOPLIST_FILE = iVoiceRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tkachvladyslavyu.ivoicerecord.iVoiceRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

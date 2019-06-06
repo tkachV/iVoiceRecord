@@ -7,3 +7,33 @@
 //
 
 import Foundation
+import UIKit
+
+class AppSplasViewController: UIViewController {
+    
+    //MARK: Constants
+    
+    //MARK: Views
+    
+    
+    //MARK: Implementations
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    //MARK: Preparing
+    private func prepareViews() {
+        
+    }
+    
+    private func prepareNavigationBar() {
+        
+    }
+    
+    //MARK: Layout
+    private func prepareLayout() {
+        
+    }
+    
+}

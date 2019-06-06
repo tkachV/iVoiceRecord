@@ -1,7 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Main Voice Record Controller-->
+        <scene sceneID="oss-Pp-ilZ">
+            <objects>
+                <viewController storyboardIdentifier="MainVoiceRecordController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rxh-Eg-dNg" customClass="MainVoiceRecordController" customModule="iVoiceRecord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ud-u9-s59">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Voice Record Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK3-GB-80A">
+                                <rect key="frame" x="95.5" y="437.5" width="223" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tK3-GB-80A" firstAttribute="centerY" secondItem="9ud-u9-s59" secondAttribute="centerY" id="HSg-f3-BLw"/>
+                            <constraint firstItem="tK3-GB-80A" firstAttribute="centerX" secondItem="9ud-u9-s59" secondAttribute="centerX" id="dfa-hg-AMH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="70z-Ku-KvK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ibv-zR-1Kd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="-17.410714285714285"/>
+        </scene>
+        <!--Details Voice Track Controller-->
+        <scene sceneID="WzJ-6l-OLe">
+            <objects>
+                <viewController storyboardIdentifier="DetailsVoiceTrackController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tf4-dv-ibe" customClass="DetailsVoiceTrackController" customModule="iVoiceRecord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AXT-tx-Rid">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Details Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL6-NA-bKw">
+                                <rect key="frame" x="117.5" y="437.5" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bL6-NA-bKw" firstAttribute="centerX" secondItem="AXT-tx-Rid" secondAttribute="centerX" id="j41-s0-Wkc"/>
+                            <constraint firstItem="bL6-NA-bKw" firstAttribute="centerY" secondItem="AXT-tx-Rid" secondAttribute="centerY" id="nRt-lz-Hcg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ljQ-P4-Q7G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhP-cT-5nM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="-17"/>
+        </scene>
+    </scenes>
 </document>

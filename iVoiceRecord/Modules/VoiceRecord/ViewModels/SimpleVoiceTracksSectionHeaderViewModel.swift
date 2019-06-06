@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+
+class SimpleVoiceTracksSectionHeaderViewModel: ViewModel {
+    
+    /* Vary simple :) */
+    var title: String
+    
+    init(title: String) {
+        self.title = title
+        
+        super.init()
+    }
+    
+}
