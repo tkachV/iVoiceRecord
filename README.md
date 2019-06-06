@@ -29,4 +29,5 @@ Implementation of a simple voice recorder with special logic for trimming audio 
 
 Detailed description will be  soon .... :)
 -
+- PS. There were some problems with trimming audio files into parts, since the duration is not always a multiple of 3 seconds. An internal limiter was added and the minimum track recording length was 3 seconds. Only yesterday I added this logic, I did not find another quick solution.
 
